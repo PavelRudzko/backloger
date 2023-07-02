@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './Comps /NavBar'
 import Header from './Comps /header'
-
+import Footer from './Comps /Footer'
+import {BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+    <Header></Header>
+    <Router>
+      <Navbar/>
+      <Routes>
+        {/* <Route exact path='/' element ={<Home/>} /> */}
+      </Routes>
+    </Router>
+    <Footer/>
+      {/* <div>
         <header> <Header/></header>
 
         
       <label for="name">Name (4 to 8 characters):</label>
 
 <input type="text" id="name" name="name" required
+
+
        minlength="4" maxlength="8" size="10"/>
 
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
         <input type="file" accept="image/*, text/*" name="file"/>
 
       </div>
-      <h1> BacklogerApp Vite + React </h1>
-      <div className="card">
+      <h1> Backloger</h1>
+      {/* <div> <Navbar/> </div> */}
+
+      {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -36,11 +42,12 @@ function App() {
         Use application for aproach you idea 
         </p>
       </div>
+      <footer> <Footer/> </footer>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        Click on the Backloger logos to start
+      </p>  */}
     </>
-  )
+  );
 }
 
 export default App
