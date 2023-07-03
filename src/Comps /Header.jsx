@@ -1,16 +1,16 @@
 import React from "react"
 import {NavLink,Link} from "react-router-dom"
 
-
+import { useState } from "react"
 
 function Header() {
     return (
         
         
         <div> 
-            <button>new button </button>
-            <h1>This is a header </h1>
-            <button>new button again </button>
+           
+            <h1>This is a BackLogger </h1>
+            <button> Add new idea  </button>
             {/* <header className="navbar">This is a header 
             <button>new button </button>
             </header>
@@ -20,7 +20,7 @@ function Header() {
                 {/* <NavLink href="">Welcome</NavLink>
                 <NavLink href="">Insights</NavLink>
                 <NavLink href="">Dashboard</NavLink> */}
-         
+       
         </div>
     )
 }

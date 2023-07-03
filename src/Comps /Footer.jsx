@@ -1,5 +1,7 @@
 import React from "react"
 import "./Footer.css"
+import { useState } from "react"
+
 
 function Footer() {
     return (
@@ -10,8 +12,7 @@ function Footer() {
                 <div className="col"> 
                 <h4>RUDZKO PRESENT INC</h4>
                 <ul className="list-unstyled " > 
-                <li> 04-359</li>
-                <li>Warsaw,Poland </li>
+                <li> 04-359,Warsaw,Poland </li>
                 54,Kobielska Street                    
                 </ul>
 
