@@ -20,7 +20,9 @@ function App() {
       <Navbar/>
       
       <Routes>
-         <Route exact path='/' element ={<Home/>} /> 
+         <Route path='/' exect element ={<Home/>} /> 
+         <Route path='/reports' element ={Reports}/> 
+         <Route path='/ideas' element={Ideas}/>
       </Routes>
     </Router>
     <Footer/>

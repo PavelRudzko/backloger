@@ -2,7 +2,7 @@ import React from 'react'
 const [ideaField,setIdeaField] = useState("")
 const [describeIdeaField,setDescribeIdeaField] = useState("")
 
-import function IdeaItem(){
+ function IdeaItem(){
     return (
 <>
 <div>
@@ -21,9 +21,8 @@ import function IdeaItem(){
   onChange={(e) => setDescribeIdeaField (e.target.value.match(/^[a-zA-Z\s]*$/))}
 />
 </div>
+{/* //add new button */}
 </>
 
     )
 }
-
-export default IdeaItem

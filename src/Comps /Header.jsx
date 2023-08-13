@@ -3,6 +3,12 @@ import {NavLink,Link} from "react-router-dom"
 
 import { useState } from "react"
 
+const [isDarkMode,setIsDarkMode] = useState(true)
+
+const toggleTheme =() => {
+    setIsLightMode
+}
+
 function Header() {
     return (
         
